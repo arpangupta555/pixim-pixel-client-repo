@@ -22,7 +22,7 @@ const Login = () => {
             .then(error => console.log(error));
     }
 
-
+    // pass;  b4hK693GQ56xpras
 
     return (
         <div className="hero  w-full">
