@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import ServiceCard from './ServiceCard';
+import ServiceCard from '../Services/ServiceCard';
+import Servicesingle from './Servicesingle';
 
-const Services = () => {
-
+const Ourservices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
 
@@ -24,17 +24,16 @@ const Services = () => {
 
                 {
 
-                    services.slice(0, 3).map(service => <ServiceCard
+                    services.map(service => <Servicesingle
                         key={service._id}
                         service={service}
 
-                    ></ServiceCard>)
+                    ></Servicesingle>)
 
                 }
             </div>
             <div className="card-actions justify-end mx-5 my-5">
 
-                <Link to='/ourservices'> <button className="btn btn-danger">See More </button> </Link>
 
             </div>
 
@@ -45,4 +44,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default Ourservices;
