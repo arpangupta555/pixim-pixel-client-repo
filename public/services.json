@@ -1,0 +1,81 @@
+[
+    {
+        "_id": "0282e0e58a5c404fbd15261f11c2ab6a",
+        "category_id": "01",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "title": "Wedding/Engagement Photography",
+        "image_url": "https://ibb.co/3hSXgC2",
+        "price": "$60",
+        "duration": "5 hours",
+        "details": "We have a team of artists with a whole new setup of equipment and bright technicians. Capable of handling any media events like Photography, Cinematography, Music video, etc. Cover your wedding / Event with a photographer on a limited budget, we’ll give you the best quality."
+    },
+    {
+        "_id": "0282e0e58a5c405hjk15261f11c2ab6a",
+        "category_id": "02",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "title": "Fashion/Outdoor Photography",
+        "image_url": "https://ibb.co/pfZSNXr",
+        "price": "$25",
+        "duration": "2 hours",
+        "details": "To produce imaginative and eye-catching photographs that illustrate and advertise clothes, accessories and lifestyle Fashion photographers work both in studios and on location. Fashion photographers have to have proper understanding of each client's brand image, the various end uses of images, and be able to work closely with other creative people to fulfil the desired job."
+    },
+    {
+        "_id": "0282e0e58a5c405hjk15261f11c31f11",
+        "category_id": "03",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "number": 4.5,
+        "title": "Commercial/Product Photography",
+        "image_url": "https://ibb.co/ky1fDr4",
+        "price": "$20",
+        "duration": "2 hours",
+        "details": "There is a saying that the first impression is the last impression. A photographer has to use certain techniques so that it can grab the attention of the consumer at first glance.I do all kinds of product photography including e-commerce photography, advertising photography, food photography and many more."
+    },
+    {
+        "_id": "0282e0e58a5c405hjk15261f11c3f11c",
+        "category_id": "04",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "title": "Institutional Events Photography",
+        "image_url": "https://cdn.vysokeskoly.cz/czech-universities/uploads/2020/09/84.jpg",
+        "price": "$35",
+        "duration": "3 hours",
+        "details": "We are creative in every aspect of the event; planning, promotional and publicity as well as execution. By being creative, our events are more outstanding and will leave a great impact not just to us, but to our clients as well."
+    },
+    {
+        "_id": "0216a0e58a5c405hjk15261f11c35hjk",
+        "category_id": "05",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "title": "Travel Diaries Photography",
+        "image_url": "https://ibb.co/7Q66QTV",
+        "price": "$30",
+        "duration": "3 hours",
+        "details": "To dominate the tourism industry by excellence in service with innovation & creative concepts in the global marketplace for our clients that will help us achieve the title of best travel agency in Bangladesh."
+    },
+    {
+        "_id": "0282e0e8ghat405hjk15261f11c38gat",
+        "category_id": "06",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "title": "Personal/Portfolio Photography",
+        "image_url": "https://ibb.co/F8THxJ3",
+        "price": "$30",
+        "duration": "3 hours",
+        "details": "The professional photographer's directory comes to you where you can find professional photographers in quick, convenient, & efficient manner."
+    }
+]
