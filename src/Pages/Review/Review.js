@@ -6,18 +6,46 @@ import ReviewRow from './ReviewRow';
 const Review = () => {
 
     const { user } = useContext(AuthContext);
-    const [reviews, setReviews] = useState({})
+    const [reviews, setReviews] = useState([])
 
 
 
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/review?email=${user.email}`)
+        fetch(`http://localhost:5000/review?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setReviews(data))
 
     }, [user?.email])
+
+
+
+    const handleDelete = id => {
+        const proceed = window.confirm('Want to delete?')
+        if (proceed) {
+
+            fetch(`http://localhost:5000/review/${id}`, {
+                method: 'DELETE'
+            })
+
+                .then(res => res.json())
+                .then(data => {
+
+                    console.log(data);
+                    if (data.deletedCount > 0) {
+                        alert('Deleted Successfully');
+                        const remaining = reviews.filter(rvw => rvw._id !== id);
+                        setReviews(remaining);
+                    }
+
+
+                })
+
+        }
+
+
+    }
 
     return (
         <div>
@@ -46,6 +74,7 @@ const Review = () => {
                             reviews.map(reviewcus => <ReviewRow
                                 key={reviewcus._id}
                                 reviewcus={reviewcus}
+                                handleDelete={handleDelete}
                             ></ReviewRow>)
                         }
 

@@ -1,7 +1,7 @@
 import { data } from 'autoprefixer';
 import React, { useEffect, useState } from 'react';
 
-const ReviewRow = ({ reviewcus }) => {
+const ReviewRow = ({ reviewcus, handleDelete }) => {
 
 
     const { serviceName, _id, customer, email, review, service } = reviewcus;
@@ -19,16 +19,7 @@ const ReviewRow = ({ reviewcus }) => {
     }, [service])
 
 
-    const handleDelete = id => {
-        const proceed = window.confirm('Want to delete?')
-        if (proceed) {
 
-            fetch(`http://localhost:5000/review/${id}`)
-
-        }
-
-
-    }
 
 
 
