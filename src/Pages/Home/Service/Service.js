@@ -109,7 +109,7 @@ const Service = () => {
                             </svg>
                         </div>
                         <span className="w-12 h-1 my-2 rounded-lg dark:bg-violet-400"></span>
-                        <p>Prantik Ovi</p>
+                        <p>Elon Agarwal</p>
                     </div>
                 </div>
             </section>
