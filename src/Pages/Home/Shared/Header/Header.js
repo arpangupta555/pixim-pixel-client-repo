@@ -19,14 +19,14 @@ const Header = () => {
 
 
         <li> <Link to='/ourservices'  > Our Services </Link> </li>
-        <li> <Link to='/review'> My Review </Link> </li>
+
 
         {
             user?.email ?
                 <>
                     <li> <Link to='/addservice'> Add Service </Link> </li>
                     <li> <button onClick={handleLogout}>Logout</button>   </li>
-
+                    <li> <Link to='/review'> My Review </Link> </li>
 
                 </>
                 :

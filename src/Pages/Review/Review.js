@@ -51,39 +51,20 @@ const Review = () => {
 
     return (
         <div>
-            <h1 className='text-center text-4xl'> You Have {reviews.length} Reviews</h1>
 
-
-            <div className="overflow-x-auto w-full">
-                <table className="table w-full">
-
-                    <thead>
-                        <tr>
-                            <th>Delete</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Your Review</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        {
-                            reviews.map(reviewcus => <ReviewRow
-                                key={reviewcus._id}
-                                reviewcus={reviewcus}
-                                handleDelete={handleDelete}
-                            ></ReviewRow>)
-                        }
+            <h1 className='text-3xl text-center mt-12'>You have {reviews.length} Reviews Here </h1>
+            {
+                reviews.map(reviewcus => <ReviewRow
+                    key={reviewcus._id}
+                    reviewcus={reviewcus}
+                    handleDelete={handleDelete}
+                ></ReviewRow>)
+            }
 
 
 
-                    </tbody>
 
 
-
-                </table>
-            </div>
 
 
 

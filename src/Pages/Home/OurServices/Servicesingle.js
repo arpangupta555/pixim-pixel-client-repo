@@ -12,7 +12,7 @@ const Servicesingle = ({ service }) => {
 
 
             <PhotoProvider>
-                <PhotoView src="/1.jpg">
+                <PhotoView src={image_url}>
                     <img src={image_url} alt="" />
 
                 </PhotoView>
