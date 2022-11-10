@@ -1,10 +1,15 @@
 import React from 'react';
-import Login from '../../Login/Login';
+import useTitle from '../../../hooks/useTitle';
+
 import Banner from '../Banner/Banner';
 import Section from '../Section/Section';
 import Services from '../Services/Services';
 
+
+
 const Home = () => {
+
+    useTitle('PixelPixim-Home');
     return (
         <div>
 
