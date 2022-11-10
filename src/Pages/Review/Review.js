@@ -1,4 +1,4 @@
-import { data } from 'autoprefixer';
+
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import ReviewRow from './ReviewRow';
@@ -36,6 +36,7 @@ const Review = () => {
                     if (data.deletedCount > 0) {
                         alert('Deleted Successfully');
                         const remaining = reviews.filter(rvw => rvw._id !== id);
+                        console.log(remaining)
                         setReviews(remaining);
                     }
 
@@ -57,15 +58,11 @@ const Review = () => {
 
                     <thead>
                         <tr>
-                            <th>
-                                <label>
-                                    <input type="checkbox" className="checkbox" />
-                                </label>
-                            </th>
+                            <th>Delete</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Your Review</th>
-                            <th></th>
+
                         </tr>
                     </thead>
                     <tbody>

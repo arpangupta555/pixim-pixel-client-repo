@@ -1,12 +1,13 @@
-import { data } from 'autoprefixer';
+
 import React, { useEffect, useState } from 'react';
 
 const ReviewRow = ({ reviewcus, handleDelete }) => {
 
 
-    const { serviceName, _id, customer, email, review, service } = reviewcus;
+    const { serviceName, customer, email, review, service, _id } = reviewcus;
+    console.log(_id)
 
-    const [orderService, setOrderServices] = useState({})
+    const [orderService, setOrderServices] = useState([])
 
     useEffect(() => {
 
