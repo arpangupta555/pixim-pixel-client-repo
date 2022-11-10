@@ -1,11 +1,13 @@
-import React, { useContext } from 'react';
+import { GoogleAuthProvider } from 'firebase/auth';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 
 const Login = () => {
 
 
-    const { login } = useContext(AuthContext)
+    const { login } = useContext(AuthContext);
+    const [error, setError] = useState('');
 
     const handleLogin = event => {
         event.preventDefault();
@@ -18,11 +20,32 @@ const Login = () => {
 
                 const user = result.user;
                 console.log(user)
+                form.reset()
+                setError('')
             })
             .then(error => console.log(error));
+
+
     }
 
-    // pass;  b4hK693GQ56xpras
+
+    const { providerLogin } = useContext(AuthContext);
+
+    const googleProvider = new GoogleAuthProvider()
+
+    const handleGoogleSignIn = () => {
+
+        providerLogin(googleProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+
+
+            })
+            .catch(error => console.error(error))
+    }
+
+
 
     return (
         <div className="hero  w-full">
@@ -54,7 +77,11 @@ const Login = () => {
                         </div>
                     </form>
 
+                    <p>{error}</p>
+
                     <p className='text-center mb-6'>New to PixelPixim  <Link className='text-orange-600 font-bold' to="/signup" > Sign-up </Link> </p>
+                    <button onClick={handleGoogleSignIn} type="button" className="px-8 py-3 font-semibold border rounded dark:border-gray-100 dark:text-black-100">Google Sign-in</button>
+
                 </div>
             </div>
         </div>

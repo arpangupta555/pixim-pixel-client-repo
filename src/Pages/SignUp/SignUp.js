@@ -6,6 +6,9 @@ const SignUp = () => {
 
 
     const { createUser } = useContext(AuthContext)
+
+
+
     const handSignUp = event => {
         event.preventDefault();
         const form = event.target;
