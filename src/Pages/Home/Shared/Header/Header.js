@@ -17,20 +17,23 @@ const Header = () => {
         <li> <Link to='/'> Home </Link> </li>
 
 
-        <li> <Link to='/blog'> Blog </Link> </li>
-        <li> <Link to='/ourservices'  > Our Services </Link> </li>
 
+        <li> <Link to='/ourservices'  > Our Services </Link> </li>
+        <li> <Link to='/review'> My Review </Link> </li>
 
         {
             user?.email ?
                 <>
-                    <li> <Link to='/review'> My Review </Link> </li>
+                    <li> <Link to='/addservice'> Add Service </Link> </li>
                     <li> <button onClick={handleLogout}>Logout</button>   </li>
 
 
                 </>
                 :
-                <li> <Link to='/login'> Login </Link> </li>}
+                <li> <Link to='/login'> Login </Link> </li>
+        }
+
+        <li> <Link to='/blog'> Blog </Link> </li>
     </>
 
 
@@ -46,18 +49,16 @@ const Header = () => {
                             {menuItems}
                         </ul>
                     </div>
-                    <span className="self-center  text-2xl font-semibold mx-6">PixelPixim</span>
+                    <h1 className="self-center text-amber-500 text-2xl font-semibold mx-6">PixelPixim</h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         {menuItems}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn" href='jk'>Get started</a>
-                </div>
+
             </div>
-        </div>
+        </div >
     );
 };
 
