@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# This is photography serive based platform
+# Name of the projects is PixelPixim
+# I generally use react-bootstrap as CSS FrameWork
+# I use MongoDB as database.
+# I tried to maintain all the requirement of the project 
+#Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
