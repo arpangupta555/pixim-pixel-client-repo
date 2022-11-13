@@ -14,7 +14,7 @@ const Review = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/review?email=${user?.email}`)
+        fetch(`https://pixel-pixim-server.vercel.app/review?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setReviews(data))
 
@@ -26,7 +26,7 @@ const Review = () => {
         const proceed = window.confirm('Want to delete?')
         if (proceed) {
 
-            fetch(`http://localhost:5000/review/${id}`, {
+            fetch(`https://pixel-pixim-server.vercel.app/review/${id}`, {
                 method: 'DELETE'
             })
 

@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+
 
 const Service = () => {
 
@@ -30,7 +31,10 @@ const Service = () => {
 
 
 
-        fetch('http://localhost:5000/review', {
+
+
+
+        fetch('https://pixel-pixim-server.vercel.app/review', {
 
             method: 'POST',
             headers: {
@@ -71,6 +75,11 @@ const Service = () => {
                     <p>Duration: {duration}</p>
 
                 </div>
+
+
+
+
+
             </div>
 
 

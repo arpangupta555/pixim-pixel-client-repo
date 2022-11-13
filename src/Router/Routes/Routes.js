@@ -43,7 +43,7 @@ const router = createBrowserRouter([
 
                 path: '/service/:id',
                 element: <Service></Service>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://pixel-pixim-server.vercel.app/services/${params.id}`)
 
             },
             {
